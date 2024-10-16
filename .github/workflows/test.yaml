@@ -29,6 +29,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.1
-            
       - name: Directorio
         run: ls -al
+
+      - name: Instalar
+        run: 
+          cd .github/workflows
+          ls -al
