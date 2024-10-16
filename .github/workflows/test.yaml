@@ -9,19 +9,20 @@ jobs:
       - name: Mensaje
         run: echo "Hola mundo!!!"
         
-      - name: Touch file  # Crea
+      - name: Touch file  # Crea el archivo hola.txt
         run: |
           touch hola.txt
           ls -al
           
-      - name: Set text  # Agrega
+      - name: Set text  # Agrega texto al archivo hola.txt
         run: |
           echo "Hola mundo" >> hola.txt
           ls -al
           
-      - name: Read file  # Lee
+      - name: Read file  # Lee el contenido del archivo hola.txt
         run: |
           cat hola.txt
+          ls -al
 
   dos:
     runs-on: ubuntu-latest
